@@ -1,11 +1,13 @@
 :root {
-    --black: #030406;
-    --white: #f5f8ff;
-    --primary: #2dd7ff;
-    --secondary: #5a8cff;
-    --accent: #ff3c98;
-    --gray: #0d1118;
-    --light-gray: #1b2230;
+    --black: #08160c;
+    --white: #eef4e9;
+    --primary: #54b847;
+    --secondary: #8ccf6b;
+    --accent: #c8e789;
+    --gray: #0e1f14;
+    --light-gray: #1f3b25;
+    --surface: #152c1d;
+    --surface-light: #254032;
 }
 
 * {
@@ -16,7 +18,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: radial-gradient(circle at top, rgba(45, 215, 255, 0.08), transparent 25%), linear-gradient(180deg, #030406 0%, #05060f 100%);
+    background: radial-gradient(circle at top, rgba(84, 184, 71, 0.10), transparent 25%), linear-gradient(180deg, #08160c 0%, #0b2113 100%);
     color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
@@ -38,11 +40,11 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(2, 4, 10, 0.92);
+    background: rgba(8, 22, 12, 0.92);
     backdrop-filter: blur(12px);
     z-index: 1000;
     padding: 15px 0;
-    border-bottom: 1px solid rgba(45, 215, 255, 0.12);
+    border-bottom: 1px solid rgba(84, 184, 71, 0.16);
 }
 
 nav {
@@ -58,7 +60,7 @@ nav {
     background: linear-gradient(45deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 12px rgba(45, 215, 255, 0.4);
+    text-shadow: 0 0 12px rgba(84, 184, 71, 0.45);
 }
 
 .logo span {
@@ -110,7 +112,7 @@ nav {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(180deg, rgba(2, 4, 10, 0.92), rgba(2, 4, 10, 0.75)), url('https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    background: linear-gradient(180deg, rgba(8, 22, 12, 0.92), rgba(8, 22, 12, 0.75)), url('https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
     background-blend-mode: multiply;
     display: flex;
     align-items: center;
@@ -123,7 +125,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(45, 215, 255, 0.12), transparent 30%);
+    background: radial-gradient(circle at center, rgba(84, 184, 71, 0.16), transparent 30%);
     pointer-events: none;
 }
 
@@ -140,7 +142,7 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 16px rgba(45, 215, 255, 0.3);
+    text-shadow: 0 0 16px rgba(84, 184, 71, 0.35);
 }
 
 .hero p {
@@ -167,7 +169,7 @@ nav {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(45, 215, 255, 0.25);
+    box-shadow: 0 10px 25px rgba(84, 184, 71, 0.25);
 }
 
 section {
@@ -193,7 +195,7 @@ section.visible {
     color: var(--primary);
     margin-bottom: 20px;
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(45, 215, 255, 0.14);
+    text-shadow: 0 0 10px rgba(84, 184, 71, 0.14);
 }
 
 .section-title::after {
@@ -257,19 +259,19 @@ section.visible {
 }
 
 .service-card {
-    background: var(--gray);
+    background: var(--surface);
     padding: 40px 30px;
     border-radius: 15px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid rgba(45, 215, 255, 0.12);
+    border: 1px solid rgba(140, 207, 107, 0.16);
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    background: var(--light-gray);
+    background: var(--surface-light);
     border-color: var(--secondary);
-    box-shadow: 0 15px 35px rgba(45, 215, 255, 0.16);
+    box-shadow: 0 15px 35px rgba(84, 184, 71, 0.2);
 }
 
 .service-icon {
@@ -285,7 +287,7 @@ section.visible {
 }
 
 .service-card p {
-    color: #ccc;
+    color: #c8d9c0;
     line-height: 1.6;
 }
 
@@ -297,7 +299,7 @@ section.visible {
 }
 
 .artist-card {
-    background: var(--gray);
+    background: var(--surface);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -308,7 +310,7 @@ section.visible {
 .artist-card:hover {
     transform: translateY(-10px);
     border-color: var(--secondary);
-    box-shadow: 0 15px 35px rgba(45, 215, 255, 0.16);
+    box-shadow: 0 15px 35px rgba(84, 184, 71, 0.18);
 }
 
 .artist-image {
@@ -334,7 +336,7 @@ section.visible {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(transparent, rgba(8, 20, 12, 0.88));
     display: flex;
     align-items: flex-end;
     padding: 20px;
@@ -352,7 +354,7 @@ section.visible {
 }
 
 .music-section {
-    background: var(--gray);
+    background: var(--surface-light);
     border-radius: 20px;
     padding: 60px;
     margin: 60px 0;
@@ -378,13 +380,13 @@ section.visible {
 .player-info p {
     margin-bottom: 30px;
     line-height: 1.8;
-    color: #d9d9d9;
+    color: #d9d9d0;
 }
 
 .player-embed {
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(8, 22, 12, 0.35);
 }
 
 .player-embed iframe {
@@ -401,10 +403,10 @@ section.visible {
 }
 
 .contact-form {
-    background: var(--gray);
+    background: var(--surface);
     padding: 40px;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(140, 207, 107, 0.16);
 }
 
 .form-group {
@@ -452,7 +454,7 @@ section.visible {
 }
 
 .contact-info p {
-    color: #d9d9d9;
+    color: #d9d9d0;
     margin-bottom: 15px;
 }
 
@@ -468,24 +470,24 @@ section.visible {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: var(--gray);
+    background: var(--surface);
     color: var(--secondary);
     border-radius: 50%;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 1px solid rgba(45, 215, 255, 0.12);
+    border: 1px solid rgba(140, 207, 107, 0.18);
 }
 
 .social-link:hover {
-    background: var(--primary);
+    background: var(--secondary);
     color: var(--white);
     transform: translateY(-5px);
 }
 
 footer {
-    background: var(--gray);
+    background: var(--surface);
     padding: 60px 0 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(140, 207, 107, 0.12);
 }
 
 .footer-content {
